@@ -17,5 +17,19 @@
 </head>
 <body id="body" <?php body_class();?> >
   <header>
-    
+    <div class="inner">
+      <div class="headerNav">      
+        <a href="/" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/image/sampleLogo.svg" alt=""></a>
+        <div class="accountButtons">
+          <a href="" class="login">ログイン</a>
+          <a href="" class="companyLegister">企業登録（無料）</a>
+        </div>
+        <?php
+          wp_nav_menu(array(
+          'theme_location'=>'Menu',          
+          ));
+        ?>
+      </div>
+      
+    </div>
   </header>

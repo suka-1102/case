@@ -3,6 +3,7 @@
 */
 :root {
   --borderColor: #e8e8e8;
+  --siteColorRed: #f0322f;
 }
 
 header {
@@ -21,6 +22,10 @@ header .inner .headerNav {
 }
 header .inner .headerNav .logo {
   margin-left: 5rem;
+  transition: 0.1s;
+}
+header .inner .headerNav .logo:hover {
+  opacity: 0.4;
 }
 header .inner .headerNav .menu {
   width: 100%;
@@ -40,6 +45,10 @@ header .inner .headerNav .menu ul a {
   align-content: center;
   height: 2.75rem;
   padding: 0 0.75rem;
+  transition: 0.1s;
+}
+header .inner .headerNav .menu ul a:hover {
+  opacity: 0.4;
 }
 header .inner .accountButtons {
   display: flex;
@@ -70,4 +79,104 @@ header .inner .accountButtons .companyLegister {
   display: flex;
   align-items: center;
   padding: 0 0.75rem;
+}
+header .inner .accountButtons .companyLegister span {
+  width: 17px;
+  height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+main .inner {
+  padding: 0 5rem;
+}
+main .inner .maxWidth {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+main .inner .maxWidth section:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 55px;
+}
+main .inner .maxWidth section:first-of-type .president .subheading {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+main .inner .maxWidth section:first-of-type .president .subheading .pickup {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--siteColorRed);
+}
+main .inner .maxWidth section:first-of-type .president .subheading .title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+main .inner .maxWidth section:first-of-type .president .contents ul {
+  display: grid;
+  gap: 35px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 25px;
+}
+main .inner .maxWidth section:first-of-type .president .contents ul a {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+main .inner .maxWidth section:first-of-type .president .contents ul a img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+}
+main .inner .maxWidth section:first-of-type .president .contents ul a p {
+  font-size: 24px;
+}
+main .inner .maxWidth section:first-of-type .businessPerson {
+  max-width: 448px;
+  width: 100%;
+}
+main .inner .maxWidth section:first-of-type .businessPerson .subheading {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+main .inner .maxWidth section:first-of-type .businessPerson .subheading .pickup {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--siteColorRed);
+}
+main .inner .maxWidth section:first-of-type .businessPerson .subheading .title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+main .inner .maxWidth section:first-of-type .businessPerson .contents ul {
+  gap: 12px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+main .inner .maxWidth section:first-of-type .businessPerson .contents ul a {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+main .inner .maxWidth section:first-of-type .businessPerson .contents ul a img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */

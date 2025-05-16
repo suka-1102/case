@@ -1,0 +1,19 @@
+
+@mixin subheadingStyle {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+
+  .pickup {
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: var(--siteColorRed);
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+
+  }
+}

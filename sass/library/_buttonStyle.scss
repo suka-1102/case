@@ -1,0 +1,6 @@
+@mixin hoverButton {
+  transition: .1s;
+  &:hover {
+    opacity: .4;
+  }
+}

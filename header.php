@@ -22,7 +22,8 @@
         <a href="/" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/image/sampleLogo.svg" alt=""></a>
         <div class="accountButtons">
           <a href="" class="login">ログイン</a>
-          <a href="" class="companyLegister">企業登録（無料）</a>
+          
+          <a href="" class="companyLegister">登録（無料）<span><path class="fa-solid fa-chevron-right"></path></span></a>
         </div>
         <?php
           wp_nav_menu(array(

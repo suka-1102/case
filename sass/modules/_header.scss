@@ -1,3 +1,5 @@
+@use '../library/mixins';
+
 header {
   width: 100%;
   background-color: #fff;
@@ -7,10 +9,12 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
     .headerNav {
       display: contents;
       .logo {
         margin-left: 5rem;
+        @include mixins.hoverButton;
       }
       .menu {
         width: 100%;
@@ -28,6 +32,7 @@ header {
             align-content: center;
             height: 2.75rem;
             padding: 0 0.75rem;
+            @include mixins.hoverButton;
           }
         }
         
@@ -61,6 +66,17 @@ header {
         display: flex;
         align-items: center;
         padding: 0 0.75rem;
+        span {
+          width: 17px;
+          height: 17px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: black;
+          background-color: #fff;
+          border-radius: 50px;
+          
+        }
       }
     }
   }

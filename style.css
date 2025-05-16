@@ -4,6 +4,7 @@
 :root {
   --borderColor: #e8e8e8;
   --siteColorRed: #f0322f;
+  --siteGray: #888787;
 }
 
 header {
@@ -115,10 +116,14 @@ main .inner .maxWidth section:first-of-type .president .subheading .pickup {
   font-weight: 700;
   color: var(--siteColorRed);
 }
+main .inner .maxWidth section:first-of-type .president .subheading img {
+  width: 40px;
+  height: 40px;
+}
 main .inner .maxWidth section:first-of-type .president .subheading .title {
   font-size: 20px;
   font-weight: 700;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 main .inner .maxWidth section:first-of-type .president .contents ul {
   display: grid;
@@ -156,10 +161,14 @@ main .inner .maxWidth section:first-of-type .businessPerson .subheading .pickup 
   font-weight: 700;
   color: var(--siteColorRed);
 }
+main .inner .maxWidth section:first-of-type .businessPerson .subheading img {
+  width: 40px;
+  height: 40px;
+}
 main .inner .maxWidth section:first-of-type .businessPerson .subheading .title {
   font-size: 20px;
   font-weight: 700;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 main .inner .maxWidth section:first-of-type .businessPerson .contents ul {
   gap: 12px;
@@ -179,4 +188,106 @@ main .inner .maxWidth section:first-of-type .businessPerson .contents ul a img {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 8px;
+}
+main .inner .maxWidth section:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 55px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container {
+  max-width: 1100px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .subheading img {
+  width: 60px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 18px));
+  gap: 25px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul a p {
+  font-size: 16px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul a time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .banners {
+  width: 310px;
+  flex-shrink: 0;
+}
+main .inner .maxWidth section:nth-of-type(2) .banners > div {
+  gap: 38px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .inner .maxWidth section:nth-of-type(2) .banners > div a {
+  width: 100%;
+  display: block;
+}
+main .inner .maxWidth section:nth-of-type(2) .banners > div a img {
+  border-radius: 3px;
+  width: 100%;
+}
+main .inner .maxWidth section:nth-of-type(2) .banners > div .companyPickup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+main .inner .maxWidth section:nth-of-type(2) .banners > div .companyPickup .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+main .inner .maxWidth section:nth-of-type(2) .banners > div .companyPickup .subheading img {
+  width: 60px;
+}
+main .inner .maxWidth section:nth-of-type(2) .banners > div .companyPickup .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
 }/*# sourceMappingURL=style.css.map */

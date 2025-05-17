@@ -7,6 +7,10 @@
   --siteGray: #888787;
 }
 
+.page-numbers {
+  display: flex;
+}
+
 header {
   width: 100%;
   background-color: #fff;
@@ -189,6 +193,38 @@ main .inner .maxWidth section:first-of-type .businessPerson .contents ul a img {
      object-fit: contain;
   border-radius: 8px;
 }
+main .inner .maxWidth section:first-of-type .businessPerson .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+main .inner .maxWidth section:first-of-type .businessPerson .contents ul a .text p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+main .inner .maxWidth section:first-of-type .businessPerson .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+main .inner .maxWidth section:first-of-type .businessPerson .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+main .inner .maxWidth section:first-of-type .businessPerson .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
 main .inner .maxWidth section:nth-of-type(2) {
   display: flex;
   justify-content: space-between;
@@ -230,11 +266,16 @@ main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul a 
   aspect-ratio: 16/9;
   border-radius: 5px;
 }
-main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul a p {
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul a .text p {
   font-size: 16px;
   font-weight: 700;
 }
-main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul a time {
+main .inner .maxWidth section:nth-of-type(2) .container .affairs .contents ul a .text time {
   font-weight: 400;
   color: var(--siteGray);
   margin-top: 6px;
@@ -254,39 +295,394 @@ main .inner .maxWidth section:nth-of-type(2) .container .affairs .more a {
   font-size: 12px;
   font-weight: 700;
 }
-main .inner .maxWidth section:nth-of-type(2) .banners {
-  width: 310px;
-  flex-shrink: 0;
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview {
+  margin-top: 50px;
 }
-main .inner .maxWidth section:nth-of-type(2) .banners > div {
-  gap: 38px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-main .inner .maxWidth section:nth-of-type(2) .banners > div a {
-  width: 100%;
-  display: block;
-}
-main .inner .maxWidth section:nth-of-type(2) .banners > div a img {
-  border-radius: 3px;
-  width: 100%;
-}
-main .inner .maxWidth section:nth-of-type(2) .banners > div .companyPickup {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-main .inner .maxWidth section:nth-of-type(2) .banners > div .companyPickup .subheading {
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .subheading {
   display: flex;
   margin-top: 40px;
   gap: 10px;
   align-items: center;
 }
-main .inner .maxWidth section:nth-of-type(2) .banners > div .companyPickup .subheading img {
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .subheading img {
   width: 60px;
 }
-main .inner .maxWidth section:nth-of-type(2) .banners > div .companyPickup .subheading .title {
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .OBOGInterview > p {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .OBOGInterview .contents ul {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 18px));
+  gap: 25px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .OBOGInterview .contents ul a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .OBOGInterview .contents ul a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .OBOGInterview .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .OBOGInterview .contents ul a .text p {
+  font-size: 16px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .OBOGInterview .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .OBOGInterview .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .OBOGInterview .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .studentInterview {
+  margin-top: 10px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .studentInterview > p {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .studentInterview .contents ul {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 18px));
+  gap: 25px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .studentInterview .contents ul a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .studentInterview .contents ul a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .studentInterview .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .studentInterview .contents ul a .text p {
+  font-size: 16px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .studentInterview .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .studentInterview .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupInterview .studentInterview .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews {
+  margin-top: 50px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .subheading img {
+  width: 60px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .news {
+  display: flex;
+  gap: 20px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .OBOGNews > p {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .OBOGNews .contents ul {
+  gap: 12px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .OBOGNews .contents ul a {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .OBOGNews .contents ul a img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .OBOGNews .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .OBOGNews .contents ul a .text p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .OBOGNews .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .OBOGNews .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .OBOGNews .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews {
+  margin-top: 10px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews > p {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews .contents ul {
+  gap: 12px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews .contents ul a {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews .contents ul a img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews .contents ul a .text p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.page-template-page-president-php .president {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 55px;
+  padding: 0 80px;
+}
+.page-template-page-president-php .president .presidentPageDiv .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+.page-template-page-president-php .president .presidentPageDiv .subheading img {
+  width: 60px;
+}
+.page-template-page-president-php .president .presidentPageDiv .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.page-template-page-president-php .president .presidentPageDiv .contents ul {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 18px));
+  gap: 25px;
+}
+.page-template-page-president-php .president .presidentPageDiv .contents ul a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-template-page-president-php .president .presidentPageDiv .contents ul a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+.page-template-page-president-php .president .presidentPageDiv .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-template-page-president-php .president .presidentPageDiv .contents ul a .text p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.page-template-page-president-php .president .presidentPageDiv .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+.page-template-page-president-php .president .presidentPageDiv .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.page-template-page-president-php .president .presidentPageDiv .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.page-numbers > li > span,
+.page-numbers > li > a {
+  width: 35px;
+  height: 35px;
+  color: #333;
+  border: 1px solid var(--siteGray);
+  border-radius: 5px;
+}
+.page-numbers > li > span {
+  opacity: 0.4;
+}
+.page-numbers > li > .dots {
+  width: auto;
+  height: auto;
+  border: 0px;
+}
+
+.banners {
+  width: 310px;
+  flex-shrink: 0;
+}
+.banners > div {
+  gap: 38px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.banners > div a {
+  width: 100%;
+  display: block;
+}
+.banners > div a img {
+  border-radius: 3px;
+  width: 100%;
+}
+.banners > div .companyPickup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.banners > div .companyPickup .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+.banners > div .companyPickup .subheading img {
+  width: 60px;
+}
+.banners > div .companyPickup .subheading .title {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.4;

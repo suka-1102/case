@@ -36,3 +36,109 @@
     line-height: 1.4;
   }
 }
+
+@mixin articleStyle {
+  .contents ul{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, calc(25% - 18px));
+    gap: 25px;
+    a {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      img {
+        object-fit: contain;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 5px;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        p {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      time {
+        font-weight: 400;
+        color: var(--siteGray);
+        margin-top: 6px;
+      }
+      }
+      
+    }
+  }
+  .more {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 20px;
+      border: 1px solid var(--siteGray);
+      border-radius: 25px;
+      font-size: 12px;
+      font-weight: 700;
+      
+    }
+  }
+}
+
+@mixin articleStylecolumn {
+  .contents ul {
+    gap: 12px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    
+    a {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: contain;
+        border-radius: 8px;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        p {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 100%;
+        }
+        time {
+          font-weight: 400;
+          color: var(--siteGray);
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+  .more {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 20px;
+      border: 1px solid var(--siteGray);
+      border-radius: 25px;
+      font-size: 12px;
+      font-weight: 700;
+      
+    }
+  }
+}

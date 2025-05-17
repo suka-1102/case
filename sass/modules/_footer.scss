@@ -1,0 +1,29 @@
+@use '../library/mixins';
+
+.banners {
+  width: 310px;
+  flex-shrink: 0;
+  >div {
+    gap: 38px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    a {
+      width: 100%;
+      display: block;
+      img {
+        border-radius: 3px;
+        width: 100%;
+      }
+    
+    }
+    .companyPickup {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .subheading {
+        @include mixins.subheadingNot;
+      }
+    }
+  }
+}

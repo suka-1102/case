@@ -1,0 +1,46 @@
+@use '../library/mixins';
+
+.page-template-page-president-php {
+  .president {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 55px;
+    padding: 0 80px;
+    .presidentPageDiv {
+      .subheading {
+      @include mixins.subheadingNot;
+    }
+    @include mixins.articleStyle;
+    }
+    
+  }
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+  > li {
+    > span,
+    > a {
+      width: 35px;
+      height: 35px;
+      color: #333;
+      border: 1px solid var(--siteGray);
+      border-radius: 5px;
+    }
+    >span {
+      opacity: 0.4;
+    }
+    > .dots {
+      width: auto;
+      height: auto;
+      border: 0px;
+    }
+  }
+}
+

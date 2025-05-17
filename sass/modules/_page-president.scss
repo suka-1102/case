@@ -17,30 +17,4 @@
   }
 }
 
-.page-numbers {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  font-size: 20px;
-  margin-top: 20px;
-  > li {
-    > span,
-    > a {
-      width: 35px;
-      height: 35px;
-      color: #333;
-      border: 1px solid var(--siteGray);
-      border-radius: 5px;
-    }
-    >span {
-      opacity: 0.4;
-    }
-    > .dots {
-      width: auto;
-      height: auto;
-      border: 0px;
-    }
-  }
-}
 

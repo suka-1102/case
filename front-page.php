@@ -235,8 +235,28 @@
           </div>
           
         </div>
+
+        <div class="serialization">
+          <div class="subheading">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/faceSample.png" alt="">
+            <p class="title">連載</p>
+            
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></div>
+              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></div>
+              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="more">
+            <a href="">もっと見る</a>
+          </div>
+        </div>
       </div>
-      <div class="banners">
+    <div class="banners">
   <div>
     <a href="">
       <img src="<?php echo get_template_directory_uri(); ?>/image/bannerSample.png" alt="">
@@ -266,6 +286,11 @@
         <?php endwhile; endif; ?>
       </ul>
       </div>
+    </div>
+    <div class="smallBanner">
+      <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/smallBannerSample.webp" alt=""></a></div>
+      <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/smallBannerSample.webp" alt=""></a></div>
+      <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/smallBannerSample.webp" alt=""></a></div>
     </div>
     </div>
   </div>

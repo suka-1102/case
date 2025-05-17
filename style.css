@@ -4,11 +4,69 @@
 :root {
   --borderColor: #e8e8e8;
   --siteColorRed: #f0322f;
-  --siteGray: #888787;
+  --siteGray: #9e9d9d;
 }
 
 .page-numbers {
   display: flex;
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.page-numbers > li > span,
+.page-numbers > li > a {
+  width: 35px;
+  height: 35px;
+  color: #333;
+  border: 1px solid var(--siteGray);
+  border-radius: 5px;
+}
+.page-numbers > li > span {
+  opacity: 0.4;
+}
+.page-numbers > li > .dots {
+  width: auto;
+  height: auto;
+  border: 0px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: var(--siteGray);
+  border: 1px solid var(--siteGray);
+  padding: 40px 15px;
+  font-size: 10px;
+  border-radius: 20px;
+  display: flex;
+  z-index: -1;
 }
 
 header {
@@ -232,7 +290,7 @@ main .inner .maxWidth section:nth-of-type(2) {
   margin-top: 55px;
 }
 main .inner .maxWidth section:nth-of-type(2) .container {
-  max-width: 1100px;
+  max-width: 1030px;
 }
 main .inner .maxWidth section:nth-of-type(2) .container .affairs .subheading {
   display: flex;
@@ -555,6 +613,46 @@ main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews 
   font-size: 12px;
   font-weight: 700;
 }
+main .inner .maxWidth section:nth-of-type(2) .container .serialization {
+  margin-top: 45px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .serialization .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .serialization .subheading img {
+  width: 60px;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .serialization .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .serialization .mySwiper {
+  margin-top: 30px;
+  width: 90%;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .serialization .mySwiper img {
+  width: 85%;
+  margin: 0 auto;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+main .inner .maxWidth section:nth-of-type(2) .container .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
 
 .page-template-page-president-php .president {
   display: flex;
@@ -625,38 +723,12 @@ main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews 
   font-weight: 700;
 }
 
-.page-numbers {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  font-size: 20px;
-  margin-top: 20px;
-}
-.page-numbers > li > span,
-.page-numbers > li > a {
-  width: 35px;
-  height: 35px;
-  color: #333;
-  border: 1px solid var(--siteGray);
-  border-radius: 5px;
-}
-.page-numbers > li > span {
-  opacity: 0.4;
-}
-.page-numbers > li > .dots {
-  width: auto;
-  height: auto;
-  border: 0px;
-}
-
 .banners {
   width: 310px;
   flex-shrink: 0;
 }
 .banners > div {
   gap: 38px;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -686,4 +758,10 @@ main .inner .maxWidth section:nth-of-type(2) .container .groupNews .studentNews 
   font-size: 24px;
   font-weight: 700;
   line-height: 1.4;
+}
+.banners > div .smallBanner {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }/*# sourceMappingURL=style.css.map */

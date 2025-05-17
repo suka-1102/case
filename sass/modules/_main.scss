@@ -32,7 +32,7 @@ main {
         gap: 40px;
         margin-top: 55px;
         .container {
-          max-width: 1100px;
+          max-width: 1030px;
           .affairs {
             .subheading {
               @include mixins.subheadingNot;
@@ -91,6 +91,36 @@ main {
               }
               @include mixins.articleStylecolumn;
             }
+          }
+          .serialization {
+            margin-top: 45px;
+            .subheading {
+              @include mixins.subheadingNot;
+            }
+            .mySwiper {
+              margin-top: 30px;
+              width: 90%;
+              img {
+                width: 85%;
+                margin: 0 auto;
+              }
+            }
+          }
+          .more {
+            margin-top: 25px;
+            display: flex;
+            justify-content: flex-end;
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 16px 20px;
+              border: 1px solid var(--siteGray);
+              border-radius: 25px;
+              font-size: 12px;
+              font-weight: 700;
+              
+           }
           }
         }
         

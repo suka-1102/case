@@ -14,12 +14,12 @@
           <?php
             $args = array(
               'post_type' => 'presidentdetail',
-              'posts_per_page' => 2 // ← ここで表示件数を2件に制限
+              'posts_per_page' => 2, // ← ここで表示件数を2件に制限
             );
             $president_query = new WP_Query($args);
           ?>
           <ul>
-            <?php if($president_query->have_posts()): while($president_query->have_posts()): $president_query->the_post(); ?>
+            <?php if ($president_query->have_posts()): while ($president_query->have_posts()): $president_query->the_post(); ?>
             <li>
               
               <a href="<?php the_permalink(); ?>">
@@ -43,12 +43,12 @@
           <?php
             $args = array(
               'post_type' => 'sponsored',
-              'posts_per_page' => 3 // ← ここで表示件数を2件に制限
+              'posts_per_page' => 3, // ← ここで表示件数を2件に制限
             );
             $president_query = new WP_Query($args);
           ?>
           <ul>
-            <?php if($president_query->have_posts()): while($president_query->have_posts()): $president_query->the_post(); ?>
+            <?php if ($president_query->have_posts()): while ($president_query->have_posts()): $president_query->the_post(); ?>
             <li>
               
               <a href="<?php the_permalink(); ?>">
@@ -64,6 +64,12 @@
       
     </section>
 
+    <div class="separate">
+      
+    </div>
+    <div class="separate">
+      
+    </div>
     <section>
       <div class="container">
         <div class="affairs">
@@ -75,12 +81,12 @@
             <?php
             $args = array(
               'post_type' => 'affairsvoice',
-              'posts_per_page' => 4 
+              'posts_per_page' => 4,
             );
             $president_query = new WP_Query($args);
           ?>
             <ul>
-              <?php if($president_query->have_posts()): while($president_query->have_posts()): $president_query->the_post(); ?>
+              <?php if ($president_query->have_posts()): while ($president_query->have_posts()): $president_query->the_post(); ?>
               <li>
                 
                 <a href="<?php the_permalink(); ?>">
@@ -113,12 +119,12 @@
               <?php
             $args = array(
               'post_type' => 'ogobinterview',
-              'posts_per_page' => 4 
+              'posts_per_page' => 4,
             );
             $president_query = new WP_Query($args);
           ?>
             <ul>
-              <?php if($president_query->have_posts()): while($president_query->have_posts()): $president_query->the_post(); ?>
+              <?php if ($president_query->have_posts()): while ($president_query->have_posts()): $president_query->the_post(); ?>
               <li>
                 
                 <a href="<?php the_permalink(); ?>">
@@ -141,12 +147,12 @@
               <?php
             $args = array(
               'post_type' => 'studentsinterview',
-              'posts_per_page' => 4 
+              'posts_per_page' => 4,
             );
             $president_query = new WP_Query($args);
           ?>
             <ul>
-              <?php if($president_query->have_posts()): while($president_query->have_posts()): $president_query->the_post(); ?>
+              <?php if ($president_query->have_posts()): while ($president_query->have_posts()): $president_query->the_post(); ?>
               <li>
                 
                 <a href="<?php the_permalink(); ?>">
@@ -181,7 +187,7 @@
               $president_query = new WP_Query($args);
             ?>
               <ul>
-                <?php if($president_query->have_posts()): while($president_query->have_posts()): $president_query->the_post(); ?>
+                <?php if ($president_query->have_posts()): while ($president_query->have_posts()): $president_query->the_post(); ?>
                 <li>
                   
                   <a href="<?php the_permalink(); ?>">
@@ -207,12 +213,12 @@
               <?php
             $args = array(
               'post_type' => 'studentsNews',
-              'posts_per_page' => 4 
+              'posts_per_page' => 4,
             );
             $president_query = new WP_Query($args);
           ?>
             <ul>
-              <?php if($president_query->have_posts()): while($president_query->have_posts()): $president_query->the_post(); ?>
+              <?php if ($president_query->have_posts()): while ($president_query->have_posts()): $president_query->the_post(); ?>
               <li>
                 
                 <a href="<?php the_permalink(); ?>">
@@ -256,48 +262,5 @@
           </div>
         </div>
       </div>
-    <div class="banners">
-  <div>
-    <a href="">
-      <img src="<?php echo get_template_directory_uri(); ?>/image/bannerSample.png" alt="">
-    </a>
-    <div class="companyPickup">
-      <div class="subheading">
-        <img src="<?php echo get_template_directory_uri(); ?>/image/faceSample.png" alt="">
-        <p class="title">企業ピックアップ</p>
-      </div>
-      <div class="contents">
-        <?php
-      $args = array(
-        'post_type' => 'pickup',
-        'posts_per_page' => 3
-      );
-      $president_query = new WP_Query($args);
-    ?>
-      <ul>
-        <?php if($president_query->have_posts()): while($president_query->have_posts()): $president_query->the_post(); ?>
-        <li>
-          
-          <a href="<?php the_permalink(); ?>">
-            <img src="<?php the_field('サムネイル'); ?>" alt="">
-          </a>
-          
-        </li>
-        <?php endwhile; endif; ?>
-      </ul>
-      </div>
-    </div>
-    <div class="smallBanner">
-      <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/smallBannerSample.webp" alt=""></a></div>
-      <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/smallBannerSample.webp" alt=""></a></div>
-      <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/smallBannerSample.webp" alt=""></a></div>
-    </div>
-    </div>
-  </div>
-</section>
-</div>
-    
-
-  </div>
-</main>
+            
 <?php get_footer(); ?>

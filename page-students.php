@@ -1,14 +1,14 @@
 <?php 
 /* 
- Template Name: 社長の想い
+ Template Name: 学生インタビュー
 */
 get_header(); ?>
 
-<div class="president">
-  <div class="presidentPageDiv">
+<div class="students">
+  <div class="studentsPageDiv">
     <div class="subheading">
       <img src="<?php echo get_template_directory_uri(); ?>/image/faceSample.png" alt="">
-      <p class="title">社長の想い</p>
+      <p class="title">学生インタビュー</p>
     </div>
     <div class="contents">
       <?php
@@ -16,7 +16,7 @@ get_header(); ?>
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
         $args = array(
-          'post_type' => 'presidentdetail',
+          'post_type' => 'studentsinterview',
           'paged' => $paged,
         );
         $president_query = new WP_Query($args);

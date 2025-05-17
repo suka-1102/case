@@ -33,3 +33,122 @@
     }
   }
 }
+
+footer {
+  margin-top: 120px;
+  padding: 48px 0;
+  color: #fff;
+  background-color: #1a1a1a;
+  .container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+    gap: 48px;
+    .sns {
+      display: flex;
+      flex-direction: column;
+      width: 340px;
+      >p {
+        font-size: 12px;
+        margin-top: 12px;
+        font-weight: 700;
+      }
+      .youtube,
+      .facebook {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #fff;
+        width: 100%;
+        .wrapper {
+          display: flex;
+          a {
+            margin-left: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            span {
+            color: #555;
+            font-size: 13px;
+            height: 24px;
+            .fa-youtube,
+            .fa-facebook {
+              display: flex;
+              align-items: center;
+              color: white;
+              margin-left: 3px;
+            }
+            &:nth-of-type(2) {
+              background-color: rgb(240, 37, 37);
+              display: flex;
+              gap: 7px;
+              color: white;
+              align-items: center;
+            }
+            }
+          }
+        }
+        
+      }
+      .facebook {
+        span {
+          .fa-facebook {
+            color: #5f71ad !important;
+          }
+          &:nth-of-type(2) {
+            background-color: #e7e6e6 !important;
+            color: #555 !important;
+            border: 1px solid var(--borderColor) !important;
+
+          }
+        }
+      }
+      .x {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 3px;
+        gap: 8px;
+        height: 44px;
+        align-items: center;
+        margin-top: 10px;
+        a {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          gap: 6px;
+          img {
+            width: 16px;
+            height: 16px;
+          }
+          p {
+            color: #555;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+      }
+      small {
+        margin-top: 16px;
+      }
+    }
+    .policy {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      ul {
+        width: 60%;
+        &:nth-of-type(2) {
+          width: 40%;
+        }
+        li {
+          display: block;
+          padding: 6px 0;
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

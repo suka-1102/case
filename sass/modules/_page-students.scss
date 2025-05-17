@@ -1,0 +1,18 @@
+@use '../library/mixins';
+
+.page-id-16 {
+  .students {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 55px;
+    padding: 0 80px;
+    .studentsPageDiv {
+      .subheading {
+      @include mixins.subheadingNot;
+    }
+    @include mixins.articleStyle;
+    }
+    
+  }
+}

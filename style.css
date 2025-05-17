@@ -723,6 +723,351 @@ main .inner .maxWidth section:nth-of-type(2) .container .more a {
   font-weight: 700;
 }
 
+.page-id-12 .affairs {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 55px;
+  padding: 0 80px;
+}
+.page-id-12 .affairs .affairsDiv .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+.page-id-12 .affairs .affairsDiv .subheading img {
+  width: 60px;
+}
+.page-id-12 .affairs .affairsDiv .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.page-id-12 .affairs .affairsDiv .contents ul {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 18px));
+  gap: 25px;
+}
+.page-id-12 .affairs .affairsDiv .contents ul a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-id-12 .affairs .affairsDiv .contents ul a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+.page-id-12 .affairs .affairsDiv .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-id-12 .affairs .affairsDiv .contents ul a .text p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.page-id-12 .affairs .affairsDiv .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+.page-id-12 .affairs .affairsDiv .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.page-id-12 .affairs .affairsDiv .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.page-id-14 .OBOG {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 55px;
+  padding: 0 80px;
+}
+.page-id-14 .OBOG .OBOGPageDiv .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+.page-id-14 .OBOG .OBOGPageDiv .subheading img {
+  width: 60px;
+}
+.page-id-14 .OBOG .OBOGPageDiv .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.page-id-14 .OBOG .OBOGPageDiv .contents ul {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 18px));
+  gap: 25px;
+}
+.page-id-14 .OBOG .OBOGPageDiv .contents ul a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-id-14 .OBOG .OBOGPageDiv .contents ul a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+.page-id-14 .OBOG .OBOGPageDiv .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-id-14 .OBOG .OBOGPageDiv .contents ul a .text p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.page-id-14 .OBOG .OBOGPageDiv .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+.page-id-14 .OBOG .OBOGPageDiv .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.page-id-14 .OBOG .OBOGPageDiv .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.page-id-16 .students {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 55px;
+  padding: 0 80px;
+}
+.page-id-16 .students .studentsPageDiv .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+.page-id-16 .students .studentsPageDiv .subheading img {
+  width: 60px;
+}
+.page-id-16 .students .studentsPageDiv .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.page-id-16 .students .studentsPageDiv .contents ul {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 18px));
+  gap: 25px;
+}
+.page-id-16 .students .studentsPageDiv .contents ul a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-id-16 .students .studentsPageDiv .contents ul a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+.page-id-16 .students .studentsPageDiv .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-id-16 .students .studentsPageDiv .contents ul a .text p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.page-id-16 .students .studentsPageDiv .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+.page-id-16 .students .studentsPageDiv .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.page-id-16 .students .studentsPageDiv .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.page-id-18 .companyNews {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 55px;
+  padding: 0 80px;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .subheading img {
+  width: 60px;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .contents ul {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 18px));
+  gap: 25px;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .contents ul a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .contents ul a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .contents ul a .text p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.page-id-18 .companyNews .companyNewsPageDiv .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.page-id-20 .studentsNews {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 55px;
+  padding: 0 80px;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .subheading {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .subheading img {
+  width: 60px;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .subheading .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .contents ul {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 18px));
+  gap: 25px;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .contents ul a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .contents ul a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .contents ul a .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .contents ul a .text p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .contents ul a .text time {
+  font-weight: 400;
+  color: var(--siteGray);
+  margin-top: 6px;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.page-id-20 .studentsNews .studentsNewsPageDiv .more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid var(--siteGray);
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .banners {
   width: 310px;
   flex-shrink: 0;
@@ -764,4 +1109,123 @@ main .inner .maxWidth section:nth-of-type(2) .container .more a {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+footer {
+  margin-top: 120px;
+  padding: 48px 0;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+footer .container {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+  gap: 48px;
+}
+footer .container .sns {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+}
+footer .container .sns > p {
+  font-size: 12px;
+  margin-top: 12px;
+  font-weight: 700;
+}
+footer .container .sns .youtube,
+footer .container .sns .facebook {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+}
+footer .container .sns .youtube .wrapper,
+footer .container .sns .facebook .wrapper {
+  display: flex;
+}
+footer .container .sns .youtube .wrapper a,
+footer .container .sns .facebook .wrapper a {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .container .sns .youtube .wrapper a span,
+footer .container .sns .facebook .wrapper a span {
+  color: #555;
+  font-size: 13px;
+  height: 24px;
+}
+footer .container .sns .youtube .wrapper a span .fa-youtube,
+footer .container .sns .youtube .wrapper a span .fa-facebook,
+footer .container .sns .facebook .wrapper a span .fa-youtube,
+footer .container .sns .facebook .wrapper a span .fa-facebook {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 3px;
+}
+footer .container .sns .youtube .wrapper a span:nth-of-type(2),
+footer .container .sns .facebook .wrapper a span:nth-of-type(2) {
+  background-color: rgb(240, 37, 37);
+  display: flex;
+  gap: 7px;
+  color: white;
+  align-items: center;
+}
+footer .container .sns .facebook span .fa-facebook {
+  color: #5f71ad !important;
+}
+footer .container .sns .facebook span:nth-of-type(2) {
+  background-color: #e7e6e6 !important;
+  color: #555 !important;
+  border: 1px solid var(--borderColor) !important;
+}
+footer .container .sns .x {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 3px;
+  gap: 8px;
+  height: 44px;
+  align-items: center;
+  margin-top: 10px;
+}
+footer .container .sns .x a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+footer .container .sns .x a img {
+  width: 16px;
+  height: 16px;
+}
+footer .container .sns .x a p {
+  color: #555;
+  font-size: 14px;
+  font-weight: 700;
+}
+footer .container .sns small {
+  margin-top: 16px;
+}
+footer .container .policy {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+footer .container .policy ul {
+  width: 60%;
+}
+footer .container .policy ul:nth-of-type(2) {
+  width: 40%;
+}
+footer .container .policy ul li {
+  display: block;
+  padding: 6px 0;
+}
+footer .container .policy ul li a {
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

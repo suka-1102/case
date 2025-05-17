@@ -1,11 +1,11 @@
 <?php 
 /* 
- Template Name: 社長の想い
+ Template Name: 人事の声
 */
 get_header(); ?>
 
-<div class="president">
-  <div class="presidentPageDiv">
+<div class="affairs">
+  <div class="affairsDiv">
     <div class="subheading">
       <img src="<?php echo get_template_directory_uri(); ?>/image/faceSample.png" alt="">
       <p class="title">社長の想い</p>
@@ -16,7 +16,7 @@ get_header(); ?>
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
         $args = array(
-          'post_type' => 'presidentdetail',
+          'post_type' => 'affairsvoice',
           'paged' => $paged,
         );
         $president_query = new WP_Query($args);

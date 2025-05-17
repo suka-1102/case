@@ -1,14 +1,14 @@
 <?php 
 /* 
- Template Name: 社長の想い
+ Template Name: 企業ニュース
 */
 get_header(); ?>
 
-<div class="president">
-  <div class="presidentPageDiv">
+<div class="companyNews">
+  <div class="companyNewsPageDiv">
     <div class="subheading">
       <img src="<?php echo get_template_directory_uri(); ?>/image/faceSample.png" alt="">
-      <p class="title">社長の想い</p>
+      <p class="title">企業ニュース</p>
     </div>
     <div class="contents">
       <?php
@@ -16,7 +16,7 @@ get_header(); ?>
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
         $args = array(
-          'post_type' => 'presidentdetail',
+          'post_type' => 'ogobNews',
           'paged' => $paged,
         );
         $president_query = new WP_Query($args);

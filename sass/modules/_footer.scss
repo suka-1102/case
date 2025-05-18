@@ -10,6 +10,10 @@
     a {
       width: 100%;
       display: block;
+      transition: .1s;
+        &:hover {
+          opacity: .4;
+        }
       img {
         border-radius: 3px;
         width: 100%;
@@ -17,9 +21,12 @@
     
     }
     .companyPickup {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+      .contents ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      
       .subheading {
         @include mixins.subheadingNot;
       }
@@ -67,6 +74,14 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @media (any-hover: hover) {
+              &:hover {
+                span {
+                  text-decoration: underline;
+                }
+                
+              }
+            }
             span {
             color: #555;
             font-size: 13px;
@@ -112,11 +127,18 @@ footer {
         height: 44px;
         align-items: center;
         margin-top: 10px;
+        transition: .1s;
+        @media (any-hover: hover) {
+            &:hover {
+              background-color: #a5a4a4;
+            }
+          }
         a {
           width: 100%;
           display: flex;
           justify-content: center;
           gap: 6px;
+          
           img {
             width: 16px;
             height: 16px;
@@ -146,9 +168,56 @@ footer {
           padding: 6px 0;
           a {
             font-size: 12px;
+            transition: .1s;
+            @media (any-hover: hover) {
+              &:hover {
+                color: #a5a4a4;
+              }
+            }
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .banners {
+    width: 100%;
+    > div {
+      .companyPickup {
+        .contents ul {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 16px;
+        }
+      }
+      .smallBanner {
+        overflow: scroll;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        a {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .inner .maxWidth section:first-of-type {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 520px) {
+  .banners > div .companyPickup .contents ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer .container {
+    flex-direction: column;
+    .sns {
+      width: 100%;
     }
   }
 }

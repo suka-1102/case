@@ -14,6 +14,10 @@
         gap: 16px;
         display: flex;
         flex-direction: column;
+        transition: .1s;
+        &:hover {
+          opacity: .4;
+        }
         img {
           width: 100%;
           aspect-ratio: 16/9;
@@ -26,4 +30,23 @@
       }
     }
   }
+}
+
+@mixin allPageStyle {
+  >div {
+    margin-top: 80px !important;
+    >div {
+      .contents ul{
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 20px !important;
+        @media screen and (max-width: 520px) {
+          grid-template-columns: 1fr !important;
+        }
+      }
+    }
+    @media screen and (max-width: 800px) {
+      padding: 0 16px !important;
+    }
+  }
+
 }

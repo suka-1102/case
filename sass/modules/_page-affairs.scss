@@ -1,6 +1,7 @@
 @use '../library/mixins';
 
 .page-id-12 {
+  @include mixins.allPageStyle;
   .affairs {
     display: flex;
     justify-content: space-between;
@@ -17,3 +18,8 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .affairs {
+    flex-direction: column;
+  }
+}

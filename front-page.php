@@ -7,8 +7,11 @@
       <div class="president">
         <div class="subheading">
           <p class="pickup">Pickup</p>
-          <img src="<?php echo get_template_directory_uri(); ?>/image/faceSample.png" alt="">
-          <p class="title">社長の想い</p>
+          <div class="separate">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/faceSample.png" alt="">
+            <p class="title">社長の想い</p>
+          </div>
+          
         </div>
         <div class="contents">
           <?php
@@ -36,8 +39,10 @@
       <div class="businessPerson">
         <div class="subheading">
           <p class="pickup">Pickup</p>
-          <img src="<?php echo get_template_directory_uri(); ?>/image/faceSample.png" alt="">
-          <p class="title">sponsored</p>
+          <div class="separate">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/faceSample.png" alt="">
+            <p class="title">sponsored</p>
+          </div>
         </div>
         <div class="contents">
           <?php
@@ -91,8 +96,12 @@
                 
                 <a href="<?php the_permalink(); ?>">
                   <img src="<?php the_field('サムネイル'); ?>" alt="">
-                  <p><?php the_title(); ?></p>
-                  <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+                  <div class="text">
+                    <p><?php the_title(); ?></p>
+                    <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+                    
+                  </div>
+                  
                 </a>
                 
               </li>
@@ -100,11 +109,23 @@
             </ul>
           </div>
           <div class="more">
-            <a href="">もっと見る</a>
+            <a href="/affairs">もっと見る</a>
           </div>
+          <h2>新着</h2>
           <div class="ranking">
-            <h2>ランキング</h2>
+            <div class="contents">
+              <ul class="number">
+                <li><span>No.1</span></li>
+                <li><span>No.2</span></li>
+                <li><span>No.3</span></li>
+              </ul>
+              <?php get_sidebar(); ?>
+              <div class="more">
+               <a href="/affairs">もっと見る</a>
+            </div>
+            </div>
           </div>
+          <small>*1ヶ月以内に公開された記事が対象のランキングです</small>
         </div>
 
         <div class="groupInterview">
@@ -129,8 +150,11 @@
                 
                 <a href="<?php the_permalink(); ?>">
                   <img src="<?php the_field('サムネイル'); ?>" alt="">
-                  <p><?php the_title(); ?></p>
-                  <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+                  <div class="text">
+                    <p><?php the_title(); ?></p>
+                    <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+                  </div>
+                  
                 </a>
                 
               </li>
@@ -138,7 +162,7 @@
             </ul>
             </div>
             <div class="more">
-            <a href="">もっと見る</a>
+            <a href="/oboginterview">もっと見る</a>
           </div>
           </div>
           <div class="studentInterview">
@@ -157,8 +181,11 @@
                 
                 <a href="<?php the_permalink(); ?>">
                   <img src="<?php the_field('サムネイル'); ?>" alt="">
-                  <p><?php the_title(); ?></p>
-                  <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+                  <div class="text">
+                    <p><?php the_title(); ?></p>
+                    <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
+                  </div>
+                  
                 </a>
                 
               </li>
@@ -166,7 +193,7 @@
             </ul>
             </div>
             <div class="more">
-            <a href="">もっと見る</a>
+            <a href="/studentinterview">もっと見る</a>
           </div>
           </div>
         </div>
@@ -178,7 +205,7 @@
           </div>
           <div class="news">
             <div class="OBOGNews">
-              <p>OBOGニュース</p>
+              <p>企業ニュース</p>
               <div class="contents">
                 <?php
               $args = array(
@@ -204,7 +231,7 @@
               </ul>
               </div>
               <div class="more">
-              <a href="">もっと見る</a>
+              <a href="/companynews">もっと見る</a>
             </div>
           </div>
           <div class="studentNews">
@@ -235,7 +262,7 @@
             </ul>
             </div>
             <div class="more">
-            <a href="">もっと見る</a>
+            <a href="studentnews">もっと見る</a>
           </div>
           </div>
           </div>
@@ -250,9 +277,9 @@
           </div>
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></div>
-              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></div>
-              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></div>
+              <div class="swiper-slide"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></a></div>
+              <div class="swiper-slide"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></a></div>
+              <div class="swiper-slide"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></a></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>

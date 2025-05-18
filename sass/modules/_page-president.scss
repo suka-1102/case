@@ -1,6 +1,7 @@
 @use '../library/mixins';
 
 .page-template-page-president-php {
+  @include mixins.allPageStyle;
   .president {
     display: flex;
     justify-content: space-between;
@@ -18,3 +19,8 @@
 }
 
 
+@media screen and (max-width: 1100px) {
+  .president {
+    flex-direction: column;
+  }
+}

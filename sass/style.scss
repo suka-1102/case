@@ -6,6 +6,7 @@
 
 @use 'variables';
 @use 'base';
+@use 'mediaquery';
 
 @use 'modules/header';
 @use 'modules/main';
@@ -15,4 +16,5 @@
 @use 'modules/page-students';
 @use 'modules/page-companyNews';
 @use 'modules/page-studentsNews';
+@use 'modules/single';
 @use 'modules/footer';

@@ -2,7 +2,8 @@
 <div class="banners">
     <div>
       <a href="">
-        <img src="<?php echo get_template_directory_uri(); ?>/image/bannerSample.png" alt="">
+        <img class="pc" src="<?php echo get_template_directory_uri(); ?>/image/bannerSample.png" alt="">
+        <img class="sp" src="<?php echo get_template_directory_uri(); ?>/image/bannerSp.png" alt="">
       </a>
       <div class="companyPickup">
         <div class="subheading">
@@ -10,23 +11,19 @@
           <p class="title">企業ピックアップ</p>
         </div>
         <div class="contents">
-          <?php
-        $args = array(
-          'post_type' => 'pickup',
-          'posts_per_page' => 3,
-        );
-        $president_query = new WP_Query($args);
-      ?>
+          
         <ul>
-          <?php if ($president_query->have_posts()): while ($president_query->have_posts()): $president_query->the_post(); ?>
-          <li>
-            
-            <a href="<?php the_permalink(); ?>">
-              <img src="<?php the_field('サムネイル'); ?>" alt="">
+          <li>         
+            <a href="">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/pickupSample.webp" alt="">
             </a>
-            
           </li>
-          <?php endwhile; endif; ?>
+          <li>         
+            <a href="">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/pickupSample.webp" alt="">
+            </a>
+          </li>
+
         </ul>
         </div>
       </div>

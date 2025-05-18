@@ -1,6 +1,7 @@
 @use '../library/mixins';
 
 main {
+  margin-top: 140px;
   .inner {
     padding: 0 5rem;
     
@@ -15,6 +16,7 @@ main {
         gap: 40px;
         margin-top: 55px;
         .president {
+          width: 100%;
           @include mixins.presidentStyle;
         }
         .businessPerson {
@@ -32,12 +34,93 @@ main {
         gap: 40px;
         margin-top: 55px;
         .container {
-          max-width: 1030px;
-          .affairs {
+          width: 70%;
+          .affairs{
             .subheading {
               @include mixins.subheadingNot;
             }
             @include mixins.articleStyle;
+          
+            >h2 {
+              font-size: 24px;
+            }
+            .ranking {
+              background-color: #f2f7f0;
+              border-radius: 20px;
+              padding: 16px 24px;
+              margin-top: 30px;
+              .contents {
+                .number {
+                  display: flex;
+                  li {
+                    width: 33%;
+                    color: #fff;
+                    
+                    &:first-of-type {
+                      span {
+                        background-color: #a7a860;
+                        padding: 8px 14px;
+                        border-radius: 18px;
+                      }
+                    }
+                    &:nth-of-type(2) {
+                      span {
+                        background-color: #6d8eaa;
+                        padding: 8px 14px;
+                        border-radius: 18px;
+                      }
+                    }
+                    &:nth-of-type(3) {
+                      span {
+                        background-color: #cc724e;
+                        padding: 8px 14px;
+                        border-radius: 18px;
+                      }
+                    }
+                  }
+                }
+              }
+              .widget {
+                h2 {
+                  // font-size: 24px;
+                  // margin-top: 24px;
+                  display: none;
+                }
+                ul {
+                  margin-top: 30px;
+                  width: 100%;
+                  position: relative;
+                  opacity: 0.8;
+                  display: flex;
+                  gap: 18px;
+                  li {
+                    display: flex;
+                    flex-direction: column;
+                    width: 32%;
+                    img {
+                      width: 100%;
+                      height: auto;
+                      border-radius: 10px;
+                    }
+                    a {
+                      font-weight: 700;
+                      margin-top: 14px;
+                      font-size: 16px;
+                      transition: .1s;
+                      &:hover {
+                        opacity: .4;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            small {
+              display: flex;
+              justify-content: flex-end;
+              color: #999;
+              margin-top: 6px;
+            }
           }
           .groupInterview {
             margin-top: 50px;
@@ -100,10 +183,19 @@ main {
             .mySwiper {
               margin-top: 30px;
               width: 90%;
-              img {
+              a {
+                transition: .1s;
+                @media (any-hover: hover) {
+                  &:hover {
+                    opacity: 0.4;
+                  }
+                }
+                img {
                 width: 85%;
                 margin: 0 auto;
+                }
               }
+              
             }
           }
           .more {
@@ -119,6 +211,10 @@ main {
               border-radius: 25px;
               font-size: 12px;
               font-weight: 700;
+              transition: .1s;
+              &:hover {
+                opacity: .4;
+              }
               
            }
           }
@@ -129,4 +225,107 @@ main {
     }
     
   }
+}
+
+@media screen and (max-width: 1100px) { 
+  main .inner {
+    padding: 0 3rem;
+  }
+  main .inner .maxWidth section {
+    &:first-of-type {
+      .president,
+      .businessPerson {
+        .subheading {
+          gap: 0;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      flex-direction: column;
+      .container {
+        width: 100%;
+      }
+    }
+  }
+  
+  
+}
+@media screen and (max-width: 800px) {
+  main .inner {
+    padding: 0 1.5rem;
+    .maxWidth section:first-of-type .businessPerson {
+      max-width: 100%;
+      
+    }
+    .maxWidth section:nth-of-type(2) {
+      .serialization .mySwiper {
+        width: 100% !important;
+        img {
+          width: 78% !important;
+        }
+      }
+    }
+  }
+  
+}
+
+
+@media screen and (max-width: 520px) {
+  main .inner {
+    padding: 0 1rem;
+  }
+  main .inner .maxWidth section:first-of-type {
+    .president .contents ul {
+      flex-direction: column;
+      display: flex;
+      li {
+        &:nth-of-type(2) {
+          display: none;
+        } 
+      }
+    }
+    .businessPerson .contents > ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      li {
+        &:first-of-type {
+          grid-column: 1 / 3;
+        }
+        &:nth-of-type(2) {
+          grid-column: 1 / 2;
+        }
+        &:nth-of-type(3) {
+          grid-column: 2 / 3;
+        }
+      }
+      a {
+        grid-template-columns:  1fr;
+      }
+      
+    }
+  }
+  main .inner .maxWidth section:nth-of-type(2) {
+    .container {
+      .affairs .ranking {
+        .contents .number li {
+        width: 50%;
+        &:nth-of-type(3) {
+          display: none;
+        }
+        } 
+        .widget ul li {
+          width: 50%;
+          &:nth-of-type(3) {
+            display: none;
+          }
+        }
+      }
+      .groupNews .news {
+        flex-direction: column;
+      }
+      
+    }
+
+  }
+
 }

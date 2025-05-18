@@ -1,11 +1,13 @@
 @use '../library/mixins';
 
 .page-id-20 {
+  @include mixins.allPageStyle;
   .studentsNews {
+
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    margin-top: 55px;
+    margin-top: 120px;
     padding: 0 80px;
     .studentsNewsPageDiv {
       .subheading {
@@ -14,5 +16,11 @@
     @include mixins.articleStyle;
     }
     
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .studentsNews {
+    flex-direction: column;
   }
 }

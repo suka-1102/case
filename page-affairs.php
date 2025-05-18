@@ -8,7 +8,7 @@ get_header(); ?>
   <div class="affairsDiv">
     <div class="subheading">
       <img src="<?php echo get_template_directory_uri(); ?>/image/faceSample.png" alt="">
-      <p class="title">社長の想い</p>
+      <p class="title">人事の声</p>
     </div>
     <div class="contents">
       <?php

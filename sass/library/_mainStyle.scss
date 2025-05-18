@@ -128,13 +128,13 @@
   }
 }
 
-@mixin articleStylecolumn {
+@mixin articleStylecolumn($display:flex) {
   .contents >ul {
     gap: 12px;
     margin-top: 24px;
-    display: flex;
+    display: $display;
     flex-direction: column;
-    
+    grid-template-columns: repeat(2, 1fr);
     a {
       width: 100%;
       display: grid;

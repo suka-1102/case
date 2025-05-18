@@ -23,6 +23,11 @@
               <img src="<?php echo get_template_directory_uri(); ?>/image/pickupSample.webp" alt="">
             </a>
           </li>
+          <li>         
+            <a href="/mosh">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/mosh.webp" alt="">
+            </a>
+          </li>
 
         </ul>
         </div>

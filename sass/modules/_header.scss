@@ -19,7 +19,7 @@ header {
         margin-left: 5rem;
         @include mixins.hoverButton;
       }
-      .menu {
+      .menu-menu-1-container {
         width: 100%;
         overflow: auto;
         ul {
@@ -98,7 +98,7 @@ header {
         display: none;
       }
     }
-    .menu ul a {
+    .menu-menu-1-container ul a {
       font-size: 1.3vw;
     }
     
@@ -107,7 +107,7 @@ header {
 
 @media screen and (max-width: 800px) {
   header .inner .headerNav {
-    .menu ul {
+    .menu-menu-1-container ul {
       overflow: auto;
       width: 830px;
       a {

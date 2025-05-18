@@ -210,6 +210,7 @@
                 <?php
               $args = array(
                 'post_type' => 'ogobnews',
+                'posts_per_page' => 4,
               );
               $president_query = new WP_Query($args);
             ?>

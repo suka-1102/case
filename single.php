@@ -2,7 +2,8 @@
 get_header(); ?>
 
 <div class="main">
-  <div class="tops">
+  <div class="divide">
+    <div class="tops">
     <figure>
       <img src="<?php the_field('サムネイル'); ?>" alt="">
     </figure>
@@ -63,6 +64,10 @@ get_header(); ?>
   <div class="pageTop">
     <a href="#top">page top</a>
   </div>
+  </div>
+
+  
 <?php 
 get_footer(); 
 ?>
+

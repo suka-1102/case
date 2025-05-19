@@ -30,3 +30,20 @@
 register_sidebar( array(
   'name' => 'サイドバー'
 ));
+
+function my_custom_post_type() {
+    register_post_type('company_post',
+        array(
+            'labels' => array(
+                'name' => __('会社の記事'),
+                'singular_name' => __('会社の記事')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'company-post'),
+            'supports' => array('title', 'editor', 'thumbnail'),
+            'taxonomies' => array('category'), // ←ここがポイント
+        )
+    );
+}
+add_action('init', 'my_custom_post_type');

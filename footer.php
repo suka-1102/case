@@ -1,5 +1,35 @@
 
 <div class="banners">
+  <?php if (is_singular('company_post')) : ?>
+<script>
+    const banners = document.querySelector(".banners");
+    if (banners) {
+      const newContent = document.createElement("div");
+      newContent.className = "newContent";
+      newContent.innerHTML = `
+        <div class="companyInformation">
+    <div>
+      <p>companies/企業名</p>
+      <p><?php the_field('企業名'); ?></p>
+    </div>
+    <div>
+      <p>業種</p>
+      <p><?php the_field('業種'); ?></p>
+    </div>
+    <div>
+      <p>本社所在地</p>
+      <p><?php the_field('本社所在地'); ?></p>
+    </div>
+    <div>
+      <p>代表</p>
+      <p><?php the_field('代表'); ?></p>
+    </div>
+  </div>
+      `;
+      banners.insertBefore(newContent, banners.firstChild);
+    }
+</script>
+<?php endif; ?>
     <div>
       <a href="">
         <img class="pc" src="<?php echo get_template_directory_uri(); ?>/image/bannerSample.png" alt="">

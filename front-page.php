@@ -276,19 +276,36 @@
             <p class="title">連載</p>
             
           </div>
+          <?php
+          $args = array(
+          'post_type' => 'company_post',
+          'posts_per_page' => 3,
+          );
+          $president_query = new WP_Query($args);
+          ?>
+
           <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></a></div>
-              <div class="swiper-slide"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></a></div>
-              <div class="swiper-slide"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/sample.webp" alt=""></a></div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+          <div class="swiper-wrapper">
+            <?php if ($president_query->have_posts()): while ($president_query->have_posts()): $president_query->the_post(); ?>
+              <div class="swiper-slide">
+                <a href="<?php the_permalink(); ?>">
+                  <img src="<?php the_field('サムネイル'); ?>" alt="">
+                </a>
+              </div>
+            <?php endwhile; endif; ?>
           </div>
+          <!-- 次へボタンと前へボタン -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          </div>
+
+          <?php wp_reset_postdata(); ?>
           <div class="more">
             <a href="">もっと見る</a>
           </div>
         </div>
       </div>
             
+
+      
 <?php get_footer(); ?>

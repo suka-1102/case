@@ -278,7 +278,7 @@
           </div>
           <?php
           $args = array(
-          'post_type' => 'company_post',
+          'post_type' => 'company_series',
           'posts_per_page' => 3,
           );
           $president_query = new WP_Query($args);

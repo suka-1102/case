@@ -1,6 +1,6 @@
 
 <div class="banners">
-  <?php if (is_singular('company_post')) : ?>
+  <?php if (is_singular('company_series')) : ?>
 <script>
     const banners = document.querySelector(".banners");
     if (banners) {
@@ -41,25 +41,24 @@
           <p class="title">企業ピックアップ</p>
         </div>
         <div class="contents">
-          
-        <ul>
-          <li>         
-            <a href="">
-              <img src="<?php echo get_template_directory_uri(); ?>/image/pickupSample.webp" alt="">
-            </a>
-          </li>
-          <li>         
-            <a href="">
-              <img src="<?php echo get_template_directory_uri(); ?>/image/pickupSample.webp" alt="">
-            </a>
-          </li>
-          <li>         
-            <a href="/mosh">
-              <img src="<?php echo get_template_directory_uri(); ?>/image/mosh.webp" alt="">
-            </a>
-          </li>
-
-        </ul>
+          <?php
+            $args = array(
+              'post_type' => 'company_pickup',
+              'posts_per_page' => 3,
+            );
+            $president_query = new WP_Query($args);
+          ?>
+            <ul>
+              <?php if ($president_query->have_posts()): while ($president_query->have_posts()): $president_query->the_post(); ?>
+              <li>
+                
+                <a href="<?php the_permalink(); ?>">
+                  <img src="<?php the_field('サムネイル'); ?>" alt="">
+                </a>
+                
+              </li>
+              <?php endwhile; endif; ?>
+            </ul>
         </div>
       </div>
       <div class="smallBanner">

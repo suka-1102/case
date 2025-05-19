@@ -32,11 +32,11 @@ register_sidebar( array(
 ));
 
 function my_custom_post_type() {
-    register_post_type('company_post',
+    register_post_type('company_series',
         array(
             'labels' => array(
-                'name' => __('会社の記事'),
-                'singular_name' => __('会社の記事')
+                'name' => __('連載ページ'),
+                'singular_name' => __('連載ページ')
             ),
             'public' => true,
             'has_archive' => true,
@@ -47,3 +47,20 @@ function my_custom_post_type() {
     );
 }
 add_action('init', 'my_custom_post_type');
+
+function my_company_pickup_post_type() {
+    register_post_type('company_pickup',
+        array(
+            'labels' => array(
+                'name' => __('企業ピックアップ'),
+                'singular_name' => __('企業ピックアップ')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'company-pickup'),
+            'supports' => array('title', 'editor', 'thumbnail'),
+            'taxonomies' => array('category'), // ← カテゴリを使えるようにする
+        )
+    );
+}
+add_action('init', 'my_company_pickup_post_type');

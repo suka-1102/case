@@ -1714,6 +1714,7 @@ main .inner .maxWidth section:nth-of-type(2) .container .more a:hover {
 .page-id-110 main {
   max-width: 1200px;
   margin: 120px auto 0;
+  padding: 0 20px;
 }
 .page-id-110 main section:first-of-type {
   display: flex;
@@ -1965,7 +1966,7 @@ main .inner .maxWidth section:nth-of-type(2) .container .more a:hover {
   }
 }
 .page-id-110 .companyPickup {
-  padding: 100px 0;
+  padding: 100px 20px;
   background-color: #f3f2f2;
   margin-bottom: -120px;
 }
@@ -1996,6 +1997,22 @@ main .inner .maxWidth section:nth-of-type(2) .container .more a:hover {
   line-height: 1.4;
 }
 
+@media screen and (max-width: 520px) {
+  .page-id-110 main section:first-of-type .text {
+    font-size: 16px;
+  }
+  .page-id-110 main section:first-of-type .name h1 {
+    font-size: 32px;
+  }
+  .page-id-110 main section:nth-of-type(2) .contents > ul, .page-id-110 main section:nth-of-type(3) .contents > ul {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .companyPickup > div .contents ul {
+    grid-template-columns: 1fr !important;
+  }
+}
 .single {
   background-color: #f3f3f5;
 }
